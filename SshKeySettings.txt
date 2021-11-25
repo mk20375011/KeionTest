@@ -1,0 +1,31 @@
+/* --- 鍵作成 ------------------------------------------------------------------
+
+	cd ~/.ssh
+
+	ssh-keygen -t rsa -b 4096 -C "mk20375(学籍番号)@ga.tera-house.ac.jp"
+
+		Enter押しまくる
+		途中 Overwrite (y/n)? が出てくる場合 y を入力
+
+		アスキーアートみたいなのが出てきたら鍵作成完了
+
+/* --- 鍵登録 ------------------------------------------------------------------
+
+	vi github_rsa.pub
+
+		ssh-rsa からメールアドレスの.jpまで全文をコピー
+
+		コピー後「Insert」→「Esc」→「:x」で終了
+
+	https://github.com/settings/ssh
+
+		SSH keys		New SSH Keyを押す
+
+		Title :		区別名(なんでも)
+		Key :		ペーストする
+
+		Add SSH Keyを押す
+
+	
+
+
